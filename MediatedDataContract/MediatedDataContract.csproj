@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackOnBuild>true</PackOnBuild>
+    <Authors>Killian Hale</Authors>
+    <Description>A tool for faciliating data contracts based on MediatR and AutoMapper</Description>
+    <PackageVersion>1.0.0</PackageVersion>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="8.0.2" />
+    <PackageReference Include="AutoMapper" Version="10.0.0" />
+  </ItemGroup>
+</Project>
