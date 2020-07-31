@@ -14,12 +14,12 @@ namespace MediatedDataContract
             _mapper = mapper;
         }
 
-        public MediatedDataContract<TRequest, TResponse> CreateContract<TRequest, TResponse>()
+        public MediatedDataContract<TRequest, TResponse> CreateContract<TRequest, TResponse>() where TRequest : class where TResponse : class
         {
             return new MediatedDataContract<TRequest, TResponse>(_mediator, _mapper);
         }
 
-        public MediatedDataContract<TResponse> CreateContract<TResponse>()
+        public MediatedDataContract<TResponse> CreateContract<TResponse>() where TResponse : class
         {
             return new MediatedDataContract<TResponse>(_mediator, _mapper);
         }
